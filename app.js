@@ -7,6 +7,7 @@ let msg = document.querySelector("#msg");
 let turnO =true; //playerX, playerO
 let count = 0;
 
+// All possible winning patterns
 const winPatterns = [
     [0, 1, 2],
     [0, 3, 6],
@@ -24,6 +25,7 @@ const resetGame = () => {
     msgContainer.classList.add("hide");
 }
 
+// Add click event to each box
 boxes.forEach((box) =>{
     box.addEventListener("click", () => {
         if (turnO) {
